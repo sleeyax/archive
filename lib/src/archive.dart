@@ -14,6 +14,11 @@ class Archive extends IterableBase<ArchiveFile> {
     files.add(file);
   }
 
+  /// Remove a file from the archive
+  void removeFile(ArchiveFile file) {
+    files.remove(file);
+  }
+
   /// The number of files in the archive.
   int get length => files.length;
 
